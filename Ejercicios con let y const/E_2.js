@@ -1,12 +1,9 @@
-
-const miConstante = 42;
-
-console.log(miConstante); 
-
-try {
-    miConstante = 100; // Esto debería causar un error
-} catch (error) {
-    console.log("Error al intentar reasignar la constante:", error.message);
+/*Uso de const: Declara una constante con const y demuestra que no se puede reasignar. */
+const nombre = 'Juanjo'
+console.log(nombre);
+try{
+    nombre = 'Juanjo'
+}catch (error){
+    console.log("Error al solicitar la constante", error.message);
 }
-
-console.log(miConstante); 
+console.log(nombre)
